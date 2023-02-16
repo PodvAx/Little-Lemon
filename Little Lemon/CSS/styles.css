@@ -1,0 +1,219 @@
+/* Сhanged the starting stylesheet of the user agent h1 element */
+:-webkit-any(article, aside, nav, section) :-webkit-any(article, aside, nav, section) h1 {
+	display: block;
+	font-size: 2em;
+	margin-block-start: 0.67em;
+	margin-block-end: 0.67em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
+
+body {
+	background-color: #FFE2E0;
+	font-family: 'Lato', sans-serif;
+	margin: 3rem 5% 0px 5%;
+}
+
+#logo {
+	display: block;
+	width: 30%;
+	margin: 0 auto 3rem auto;
+}
+
+/* footer logo */
+#fLogo {
+	width: 10%;
+}
+
+nav ul {
+	list-style: none;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 2em;
+	background-color: #495e57;
+	border: 1em solid #495e57;
+	border-radius: 1.4em;
+	padding: 0;
+	margin: 0 auto;
+	gap: 1em;
+}
+
+ul li {
+	flex: 1;
+}
+
+.navlink a {
+	display: block;
+	background-color: #f4ce14;
+	text-decoration: none;
+	color: #495e57;
+	font-size: 2em;
+	font-weight: bold;
+	width: 100%;
+	border-radius: 0.4em;
+	padding: 2em auto;
+}
+
+.navlink a:hover {
+	background-color: #495e57;
+	color: #f4ce14;
+	font-size: 1.7em;
+	/* transition: 0.5s linear; */
+}
+
+li>.currentLinkPage {
+	color: #f4ce14;
+	background-color: #495e57;
+	font-size: 1.7em;
+}
+
+
+.articleInfoLink {
+	display: block;
+	background-color: #495e57;
+	color: aliceblue;
+	border: 2px solid #f4ce14;
+	border-radius: 1em;
+	width: fit-content;
+	padding: 0.5em;
+	font-weight: 400;
+	font-size: 1em;
+}
+
+.articleInfoLink:hover {
+	background-color: #495e57;
+	color: #f4ce14;
+	font-size: 1em;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+section {
+	display: flex;
+	gap: 3em;
+	margin: 5em auto;
+}
+
+article {
+	flex: 1;
+	padding: 2em;
+	border-radius: 1.4em;
+}
+
+#promo {
+	/* margin: 5em auto; */
+	height: 25em;
+}
+
+#promoArticle {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Assets/SpaghettiPromo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	/* color: #f4ce14; */
+	text-align: right;
+
+}
+
+#promoArticle>p {
+	width: 55%;
+	margin-left: auto;
+	color: #FFE2E0;
+	font-size: 1.1em;
+	font-weight: 600;
+	line-height: 1.7em;
+}
+
+#promoArticle>h1 {
+	color: #FFE2E0;
+	font-size: 3em;
+	font-weight: 900;
+}
+
+.infoArticle>h2 {
+	font-size: 1.7em;
+	font-weight: 900;
+}
+
+.infoArticle {
+	padding-top: 1em;
+	background-color: #495e57;
+	color: aliceblue;
+}
+
+.infoArticle>ul {
+	list-style: none;
+	line-height: 2em;
+}
+
+#imgInfo1 {
+	background: url("../Assets/1stInfo.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+#imgInfo2 {
+	background: url("../Assets/2ndInfo.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+#imgInfo3 {
+	background: url("../Assets/3rdInfo.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+
+.imgDiv {
+	display: block;
+	width: auto;
+	height: 18em;
+	margin-bottom: 1.5em;
+}
+
+footer {
+	display: flex;
+	margin-top: 3em;
+	margin-bottom: 0px;
+}
+
+footer div {
+	flex: 1;
+	padding: 1em;
+}
+
+.copyright {
+	text-align: end;
+	border-top: 2px solid #495e57;
+	letter-spacing: 0.2em;
+}
+
+/* styles for not ready pages */
+.ntReadySection {
+	height: 20em;
+	text-align: center;
+	align-items: center;
+	margin: 10em auto;
+	background-color: #495e57;
+	border-radius: 1.4em;
+	color: aliceblue;
+}
+
+.ntReadyLink {
+	color: #f4ce14
+}
+
+.ntReadyLink:hover {
+	background-color: aliceblue;
+	border-radius: 0.6em;
+	padding: 0.5em;
+	color: blue;
+}
